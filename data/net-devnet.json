@@ -1,0 +1,167 @@
+{
+ "net": "devnet",
+ "rpc": "https://api.devnet.solana.com",
+ "program": "FpoT3mHLAeq224nhTTDSDsqKn7ahKAuyTvpPBYb7RBh",
+ "fundIndex": 1,
+ "protocol": "8cvce26vvaSTok5yttHQCKPFZhWHFYtG1c9QpMkajWRu",
+ "fund": "6N8qhBtUVtycPRsPTzSG43m8szFMHakNsWdiRnWLRvDe",
+ "shareMint": "TffMWotjVUkdz9qbj4WypuG1PhHfjQe4wr5DnboCH5H",
+ "lookupTable": "GLV9AWbapnCnHZr8ffwXkZmQqbutvPnizi4gc6ZC9GGS",
+ "faucet": "5HN3uRzDQq92oAyhTo2zUSAmq2zEX2kcu9iHv2PYAg4H",
+ "faucetUrl": "https://mtf-faucet.mofo-proxy.workers.dev",
+ "coins": [
+  {
+   "sym": "PUMP",
+   "slug": "pump",
+   "mint": "xrWN6St1MzMGkuj8WMAGJoGceTknV5NAct3Gobj71JW",
+   "decimals": 6,
+   "price": 0.0053948
+  },
+  {
+   "sym": "TRUMP",
+   "slug": "trump",
+   "mint": "H2RG6oaPJLeLFk3SPKnMcAKMngEuwHAx8R88EAoVaQVQ",
+   "decimals": 6,
+   "price": 2.08
+  },
+  {
+   "sym": "PENGU",
+   "slug": "pengu",
+   "mint": "4FF5WkQsarazU4euF1yrmiUHxfQBrfPB3Une72QebzXx",
+   "decimals": 6,
+   "price": 0.00887201
+  },
+  {
+   "sym": "BONK",
+   "slug": "bonk",
+   "mint": "HPEhGjiWdnoaAHX4dX582jT5noGt9ps9Htw6eX8z1jDF",
+   "decimals": 5,
+   "price": 3.57e-06
+  },
+  {
+   "sym": "WIF",
+   "slug": "wif",
+   "mint": "ATHS7XMXF13AtzCbXvdhyimLXMcYfxaHDZVkEEwx9Xcj",
+   "decimals": 6,
+   "price": 0.247917
+  },
+  {
+   "sym": "USELESS",
+   "slug": "useless",
+   "mint": "B7V8hwZkWCF23FNdMdkUWB4PdovEmCQXPBmxr5bUr51g",
+   "decimals": 6,
+   "price": 0.222816
+  },
+  {
+   "sym": "FARTCOIN",
+   "slug": "fartcoin",
+   "mint": "76pZcKMDSGMYeWcATWpwGucg5zpHqrS6mzfC4EePp3VE",
+   "decimals": 6,
+   "price": 0.174397
+  },
+  {
+   "sym": "BOME",
+   "slug": "bome",
+   "mint": "7TB1Yw6VeUWAszna4mcdUMAvou1LY2T4YMx8Rr9bsNsv",
+   "decimals": 6,
+   "price": 0.0010158
+  },
+  {
+   "sym": "CATE",
+   "slug": "cate",
+   "mint": "HHcLNxry2dNjGLfY8EZv7mZ7XsLQGKwv66X4QaFFt2tF",
+   "decimals": 6,
+   "price": 0.06713643250980032
+  },
+  {
+   "sym": "ANSEM",
+   "slug": "ansem",
+   "mint": "6s8UBN71PheTwTL2pkLfE82eWDLzaALK84KGHtRWb3D7",
+   "decimals": 6,
+   "price": 0.131768
+  }
+ ],
+ "allCoins": [
+  {
+   "sym": "PUMP",
+   "slug": "pump",
+   "mint": "xrWN6St1MzMGkuj8WMAGJoGceTknV5NAct3Gobj71JW",
+   "decimals": 6,
+   "price": 0.0053948
+  },
+  {
+   "sym": "TRUMP",
+   "slug": "trump",
+   "mint": "H2RG6oaPJLeLFk3SPKnMcAKMngEuwHAx8R88EAoVaQVQ",
+   "decimals": 6,
+   "price": 2.08
+  },
+  {
+   "sym": "PENGU",
+   "slug": "pengu",
+   "mint": "4FF5WkQsarazU4euF1yrmiUHxfQBrfPB3Une72QebzXx",
+   "decimals": 6,
+   "price": 0.00887201
+  },
+  {
+   "sym": "BONK",
+   "slug": "bonk",
+   "mint": "HPEhGjiWdnoaAHX4dX582jT5noGt9ps9Htw6eX8z1jDF",
+   "decimals": 5,
+   "price": 3.57e-06
+  },
+  {
+   "sym": "WIF",
+   "slug": "wif",
+   "mint": "ATHS7XMXF13AtzCbXvdhyimLXMcYfxaHDZVkEEwx9Xcj",
+   "decimals": 6,
+   "price": 0.247917
+  },
+  {
+   "sym": "USELESS",
+   "slug": "useless",
+   "mint": "B7V8hwZkWCF23FNdMdkUWB4PdovEmCQXPBmxr5bUr51g",
+   "decimals": 6,
+   "price": 0.222816
+  },
+  {
+   "sym": "FARTCOIN",
+   "slug": "fartcoin",
+   "mint": "76pZcKMDSGMYeWcATWpwGucg5zpHqrS6mzfC4EePp3VE",
+   "decimals": 6,
+   "price": 0.174397
+  },
+  {
+   "sym": "BOME",
+   "slug": "bome",
+   "mint": "7TB1Yw6VeUWAszna4mcdUMAvou1LY2T4YMx8Rr9bsNsv",
+   "decimals": 6,
+   "price": 0.0010158
+  },
+  {
+   "sym": "ANSEM",
+   "slug": "ansem",
+   "mint": "6s8UBN71PheTwTL2pkLfE82eWDLzaALK84KGHtRWb3D7",
+   "decimals": 6,
+   "price": 0.131768
+  },
+  {
+   "sym": "POPCAT",
+   "slug": "popcat",
+   "mint": "FctdQ4gJ3xjtLLS57Ew8jLp97pfMGFW7gNLGELfjk7mH",
+   "decimals": 9,
+   "price": 0.052804
+  },
+  {
+   "sym": "CATE",
+   "slug": "cate",
+   "mint": "HHcLNxry2dNjGLfY8EZv7mZ7XsLQGKwv66X4QaFFt2tF",
+   "decimals": 6,
+   "price": 0.06713643250980032
+  }
+ ],
+ "rpcs": [
+  "https://api.devnet.solana.com",
+  "https://solana-devnet.api.onfinality.io/public"
+ ]
+}

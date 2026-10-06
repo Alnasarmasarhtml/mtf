@@ -1,0 +1,17 @@
+{
+ "quoteMint": "TffMWotjVUkdz9qbj4WypuG1PhHfjQe4wr5DnboCH5H",
+ "pools": [
+  {
+   "name": "baby pengu",
+   "symbol": "BPENGU",
+   "baseMint": "HDux1KfJa1kNs81naYPcYsE3aqtMWHfCr6YTFPJeocdX",
+   "pool": "Dg27ZKYCmp9tdu2uEWsExo7J4AaFQG5fmq1nRT6S6Rpo",
+   "creator": "5HN3uRzDQq92oAyhTo2zUSAmq2zEX2kcu9iHv2PYAg4H",
+   "tx": "5NBUBV1jCfqdE9qv6FzbmMZJ3TJFYM7FqorZ2H8z8mEZbRpoH7nYrRaAMgfQWCpaB9Au1ERGB4SgVyJJr6tmtUbx",
+   "at": "2026-10-03T03:15:18.586Z"
+  }
+ ],
+ "config": "G12afRPsa6B2EnJLoBJSi3pyQuEFDvQCLrjRaj9Fa3xv",
+ "configTx": "bD2DsdxPgDjziUSK56UEz7S8hjh9N6WUcU4dqy5pH99pfDWX7FyTLA58e4R61ZwyFivceQqEBXKYHeXaQpxgwhr",
+ "feeClaimer": "5HN3uRzDQq92oAyhTo2zUSAmq2zEX2kcu9iHv2PYAg4H"
+}

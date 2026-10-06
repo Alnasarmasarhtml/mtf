@@ -1,0 +1,287 @@
+{
+ "net": "local",
+ "rpc": "http://127.0.0.1:8899",
+ "program": "FpoT3mHLAeq224nhTTDSDsqKn7ahKAuyTvpPBYb7RBh",
+ "fundIndex": 0,
+ "protocol": "8cvce26vvaSTok5yttHQCKPFZhWHFYtG1c9QpMkajWRu",
+ "fund": "3juhP1vY74DyAj9PFVj1sAdBTrdJHvfq75vxEXV7uBJi",
+ "shareMint": "BTrtS49ZvPS9EuCBU18Yu8Xn3dwF5WDqi9XR9gZYpfYe",
+ "lookupTable": "2thX6Fu8uStaugD4neWEgQrQ5mNGxdyjaHc8FYm3E4og",
+ "faucet": "5HN3uRzDQq92oAyhTo2zUSAmq2zEX2kcu9iHv2PYAg4H",
+ "faucetUrl": null,
+ "coins": [
+  {
+   "sym": "PUMP",
+   "slug": "pump",
+   "mint": "FPwJ9tRnaW9tvRvGkruMTkNufk6nCjK5ehfrYHxcqR5W",
+   "decimals": 6,
+   "price": 0.0053948
+  },
+  {
+   "sym": "TRUMP",
+   "slug": "trump",
+   "mint": "AaMNU4khTYNa6VAQ5vyvvEBdBbgm2r81XbnVkMfwtTr5",
+   "decimals": 6,
+   "price": 2.08
+  },
+  {
+   "sym": "PENGU",
+   "slug": "pengu",
+   "mint": "yjQHgn689ogy32aKvrEaQNsCkz7qPXM3raeuUdgZAsc",
+   "decimals": 6,
+   "price": 0.00887201
+  },
+  {
+   "sym": "BONK",
+   "slug": "bonk",
+   "mint": "3PyLbB9MheyN53verTNrN7QME8VdNxSf18ahrazFqGQR",
+   "decimals": 5,
+   "price": 0.00000357
+  },
+  {
+   "sym": "WIF",
+   "slug": "wif",
+   "mint": "2fSSPF3r4FvvGWDqNsHSEQRcefssPZDXsYHHUjxhqcdQ",
+   "decimals": 6,
+   "price": 0.247917
+  },
+  {
+   "sym": "USELESS",
+   "slug": "useless",
+   "mint": "DwWU6sfRpQa3VKzkqCs6r52ab2qsxJ7D1541rNVtcWN1",
+   "decimals": 6,
+   "price": 0.222816
+  },
+  {
+   "sym": "FARTCOIN",
+   "slug": "fartcoin",
+   "mint": "Dh7WN87jQPbEdkwu8g2ApvPu4sWdXGBpiauZCqu7Dxoq",
+   "decimals": 6,
+   "price": 0.174397
+  },
+  {
+   "sym": "BOME",
+   "slug": "bome",
+   "mint": "2yQ3NFu33QsaVbPp7XtfPajLKkPxNtamJ5fybE2NKJFR",
+   "decimals": 6,
+   "price": 0.0010158
+  },
+  {
+   "sym": "CATE",
+   "slug": "cate",
+   "mint": "FRhTd8YYTFW2mqBHCvJsvHrvHNGs7EUq8EJySGZV9tU8",
+   "decimals": 6,
+   "price": 0.06713643250980032
+  },
+  {
+   "sym": "ANSEM",
+   "slug": "ansem",
+   "mint": "AtYqGh8yNJupzUFtELbpJtNhqgzSoFpdKgTSSW6aVXXy",
+   "decimals": 6,
+   "price": 0.131768
+  }
+ ],
+ "allCoins": [
+  {
+   "sym": "PUMP",
+   "slug": "pump",
+   "mint": "FPwJ9tRnaW9tvRvGkruMTkNufk6nCjK5ehfrYHxcqR5W",
+   "decimals": 6,
+   "price": 0.0053948
+  },
+  {
+   "sym": "TRUMP",
+   "slug": "trump",
+   "mint": "AaMNU4khTYNa6VAQ5vyvvEBdBbgm2r81XbnVkMfwtTr5",
+   "decimals": 6,
+   "price": 2.08
+  },
+  {
+   "sym": "PENGU",
+   "slug": "pengu",
+   "mint": "yjQHgn689ogy32aKvrEaQNsCkz7qPXM3raeuUdgZAsc",
+   "decimals": 6,
+   "price": 0.00887201
+  },
+  {
+   "sym": "BONK",
+   "slug": "bonk",
+   "mint": "3PyLbB9MheyN53verTNrN7QME8VdNxSf18ahrazFqGQR",
+   "decimals": 5,
+   "price": 0.00000357
+  },
+  {
+   "sym": "WIF",
+   "slug": "wif",
+   "mint": "2fSSPF3r4FvvGWDqNsHSEQRcefssPZDXsYHHUjxhqcdQ",
+   "decimals": 6,
+   "price": 0.247917
+  },
+  {
+   "sym": "USELESS",
+   "slug": "useless",
+   "mint": "DwWU6sfRpQa3VKzkqCs6r52ab2qsxJ7D1541rNVtcWN1",
+   "decimals": 6,
+   "price": 0.222816
+  },
+  {
+   "sym": "FARTCOIN",
+   "slug": "fartcoin",
+   "mint": "Dh7WN87jQPbEdkwu8g2ApvPu4sWdXGBpiauZCqu7Dxoq",
+   "decimals": 6,
+   "price": 0.174397
+  },
+  {
+   "sym": "BOME",
+   "slug": "bome",
+   "mint": "2yQ3NFu33QsaVbPp7XtfPajLKkPxNtamJ5fybE2NKJFR",
+   "decimals": 6,
+   "price": 0.0010158
+  },
+  {
+   "sym": "CATE",
+   "slug": "cate",
+   "mint": "FRhTd8YYTFW2mqBHCvJsvHrvHNGs7EUq8EJySGZV9tU8",
+   "decimals": 6,
+   "price": 0.06713643250980032
+  },
+  {
+   "sym": "ANSEM",
+   "slug": "ansem",
+   "mint": "AtYqGh8yNJupzUFtELbpJtNhqgzSoFpdKgTSSW6aVXXy",
+   "decimals": 6,
+   "price": 0.131768
+  },
+  {
+   "sym": "POPCAT",
+   "slug": "popcat",
+   "mint": "G6SVx4FcRve7kM7cMi36BCDvqJ4djW9NcEh6rhiUBCWk",
+   "decimals": 9,
+   "price": 0.052804
+  },
+  {
+   "sym": "MEW",
+   "slug": "mew",
+   "mint": "9UGHgopV6V4FbKCndDEddJ7xLvMyZEZJjedJS4WCiNks",
+   "decimals": 5,
+   "price": 0.00052075
+  },
+  {
+   "sym": "TROLL",
+   "slug": "troll",
+   "mint": "E61pCn98wHvcH9fVhuBX3ZmiDVX5RES1mN8pVQqx8Hzi",
+   "decimals": 6,
+   "price": 0.04443284
+  },
+  {
+   "sym": "NEET",
+   "slug": "neet",
+   "mint": "BcAbPfsCsHbcLAiXZCh6Q3s4kN7Ag4aGTxsEcqUVX1Li",
+   "decimals": 6,
+   "price": 0.03910979
+  },
+  {
+   "sym": "OTTER",
+   "slug": "otter",
+   "mint": "9Sj8Md4BqMFwj5AD7jihLQezh2rsF7xUVjwWETN1qGcm",
+   "decimals": 6,
+   "price": 0.0042
+  },
+  {
+   "sym": "MOTH",
+   "slug": "moth",
+   "mint": "5MVZpy3h2HC57xhU3ECrVURubm4EaHSnYQfCr7kn47jw",
+   "decimals": 6,
+   "price": 0.00064
+  },
+  {
+   "sym": "SNAIL",
+   "slug": "snail",
+   "mint": "56bh9bZEgveykT3TtvakgRcBLcTKWbePrXHT5AfhYXGy",
+   "decimals": 6,
+   "price": 0.00038
+  }
+ ],
+ "demoCoins": [
+  {
+   "slug": "otter",
+   "sym": "OTTER",
+   "name": "otter mode",
+   "price": 0.0042,
+   "mcap": 4200000,
+   "liq": 310000,
+   "firstPool": "2026-08-26",
+   "holders": 6800,
+   "top10": 22,
+   "tint": "#8a6a4f",
+   "figure": "figures/demo-otter.webp",
+   "figureSm": "figures/demo-otter-sm.webp",
+   "decimals": 6,
+   "mint": "9Sj8Md4BqMFwj5AD7jihLQezh2rsF7xUVjwWETN1qGcm"
+  },
+  {
+   "slug": "moth",
+   "sym": "MOTH",
+   "name": "moth to the lamp",
+   "price": 0.00064,
+   "mcap": 640000,
+   "liq": 58000,
+   "firstPool": "2026-09-27",
+   "holders": 1900,
+   "top10": 31,
+   "tint": "#c9b89a",
+   "figure": "figures/demo-moth.webp",
+   "figureSm": "figures/demo-moth-sm.webp",
+   "decimals": 6,
+   "mint": "5MVZpy3h2HC57xhU3ECrVURubm4EaHSnYQfCr7kn47jw"
+  },
+  {
+   "slug": "snail",
+   "sym": "SNAIL",
+   "name": "slow snail",
+   "price": 0.00038,
+   "mcap": 380000,
+   "liq": 31000,
+   "firstPool": "2026-09-30",
+   "holders": 1100,
+   "top10": 34,
+   "tint": "#7fb9a8",
+   "figure": "figures/demo-snail.webp",
+   "figureSm": "figures/demo-snail-sm.webp",
+   "decimals": 6,
+   "mint": "56bh9bZEgveykT3TtvakgRcBLcTKWbePrXHT5AfhYXGy"
+  }
+ ],
+ "engineUrl": "http://localhost:8787",
+ "solPrice": 120,
+ "treasury": "5HN3uRzDQq92oAyhTo2zUSAmq2zEX2kcu9iHv2PYAg4H",
+ "demoMtfs": [
+  {
+   "symbol": "BIG5",
+   "name": "big five",
+   "fundIndex": 1,
+   "fund": "6N8qhBtUVtycPRsPTzSG43m8szFMHakNsWdiRnWLRvDe",
+   "shareMint": "TffMWotjVUkdz9qbj4WypuG1PhHfjQe4wr5DnboCH5H",
+   "lookupTable": "46f9Ucz5e6C2Vf3s2w2KcMSkrdtJ2WqXi3uKdxwRHU4f",
+   "creator": "5GFrPpwnrG6cWdofxu3L7SJcq93f14T1pYS3kQBjVXEj"
+  },
+  {
+   "symbol": "TLF",
+   "name": "timeline faves",
+   "fundIndex": 2,
+   "fund": "FykoqCv7hSYRrqmQP8xpDR2KFFbv8WXiVymeGQaPvyUg",
+   "shareMint": "5H9pJEm5TmfsCdP3rWve5o8JTku2fpcsJUj7dVuZSUYT",
+   "lookupTable": "6tsd6zvLgsbDmcMVNDze6EWwtPArViaeA1V6K5oFoGrb",
+   "creator": "8gDNcvdV79RSx65nU7ejN4qWZdWxadmTGWZMv6Zv33cC"
+  },
+  {
+   "symbol": "SLOW",
+   "name": "low and slow",
+   "fundIndex": 3,
+   "fund": "A4PyVz2NLFRtD13Gjy5oWUHQ1e2Y8x99aqMV5SRbeJ2u",
+   "shareMint": "GFVsNnXwanhoBDUCMfFKt8APJ8YqwVEqzK28eMqiuNCB",
+   "lookupTable": "D9QPYrQPf8h22ci71BoSZMBsri3PaGPxovJQPLhLECgU",
+   "creator": "37vXfQxYoM7CHzLvNyAiEj7b9Ntbf32VeJMseuQShs7t"
+  }
+ ]
+}

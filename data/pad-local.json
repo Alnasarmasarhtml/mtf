@@ -1,0 +1,32 @@
+{
+ "quoteMint": "BTrtS49ZvPS9EuCBU18Yu8Xn3dwF5WDqi9XR9gZYpfYe",
+ "pools": [
+  {
+   "name": "bean",
+   "symbol": "BEAN",
+   "baseMint": "2PDBDYYwn1uB1NkgS1buiEX5tP36x2XARPCQmhTtH5D4",
+   "pool": "HxreNcE7BesXd154W5Sx7fAXAheGXLJ2z2H1PEraeGLm",
+   "creator": "6vSxv4KyYrMh5VLvwypci9NSEJ7u3HCtJkfCThCcHeLs",
+   "at": "2026-10-06T14:57:58.937Z",
+   "bought": [
+    "ape-1",
+    "ape-4"
+   ]
+  },
+  {
+   "name": "storm cloud",
+   "symbol": "CLOUD",
+   "baseMint": "BTRjZ3EnX3soZSoW1kYEg2me3vgS48Pq8F5psXaWzEZ6",
+   "pool": "86nF1WC474XyN8JD5NGjuSPk4nKFk5xzWdoYdcuv46nb",
+   "creator": "8kMMwsQtCePerk8wArtTosyha58L5UbaSUMgednwznfW",
+   "at": "2026-10-06T14:58:21.843Z",
+   "bought": [
+    "ape-2",
+    "ape-7"
+   ]
+  }
+ ],
+ "config": "9bQd1Axw963u5ncSDeYk3JdFcF2YiUfJcQRhMNvpeHp1",
+ "configTx": "n4hoR7Ac34vDpbdxZXtMpxsR8u4XZSMhsZw6HuCWLZW7ksXXdX3WjaeuiDgYXCM1MU9rfjvU6US7Sqk93NYZTph",
+ "feeClaimer": "5HN3uRzDQq92oAyhTo2zUSAmq2zEX2kcu9iHv2PYAg4H"
+}

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MTF launchpad · launch a coin paired with meme10, or make your own mtf</title>
+<meta name="description" content="launch a coin that trades against meme10, or build your own mtf out of 3 to 10 coins in three tiers. 1% fee on every trade, 45% of it locked into the pair forever. creators seed first and sit locked 30 days.">
+<meta name="theme-color" content="#ff5a1f">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:title" content="MTF launchpad">
+<meta property="og:description" content="launch a coin paired with meme10, or make your own mtf">
+<meta property="og:image" content="https://alnasarmasarhtml.github.io/mtf/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://alnasarmasarhtml.github.io/mtf/launchpad.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://alnasarmasarhtml.github.io/mtf/og.jpg">
+  <script type="module" crossorigin src="./assets/launchpad-DYdeFtfi.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/net-BkwFUTCw.js">
+  <link rel="modulepreload" crossorigin href="./assets/ui-B-KH1py7.js">
+  <link rel="modulepreload" crossorigin href="./assets/guilloche-C2L610aW.js">
+  <link rel="modulepreload" crossorigin href="./assets/jup-CGazD533.js">
+  <link rel="modulepreload" crossorigin href="./assets/pad-De-uxKJs.js">
+  <link rel="stylesheet" crossorigin href="./assets/ui-CxfKalnJ.css">
+  <link rel="stylesheet" crossorigin href="./assets/launchpad-Db3W4EwC.css">
+</head>
+<body class="pad-page">
+
+<section class="lp-hero">
+  <div class="wrap">
+    <div class="lp-top">
+      <div>
+        <div class="eyebrow">the launchpad · everything here trades against meme10</div>
+        <h1 class="display lp-title">launch<br>on mtf.</h1>
+      </div>
+      <p class="lp-sub">two things you can make. a coin, paired with meme10 or with an mtf. or your own mtf, a basket of coins people buy in one go. every trade on the pad pays 1%, in the pair, and 45% of it goes straight into a lock. forever.</p>
+    </div>
+    <div class="choose" role="tablist">
+      <button class="pick-mode" data-mode="coin" role="tab">
+        <span class="pm-figs" id="pmCoin"></span>
+        <span class="pm-copy"><span class="mono">a</span><b class="display">a coin</b><span>picture, name, ticker. paired with meme10 from the first trade. you keep 40% of its fees for as long as it trades.</span></span>
+        <span class="pm-check" aria-hidden="true"></span>
+      </button>
+      <button class="pick-mode" data-mode="index" role="tab">
+        <span class="pm-figs" id="pmIndex"></span>
+        <span class="pm-copy"><span class="mono">b</span><b class="display">an mtf</b><span>3 to 10 coins in one token. three tiers of coins: blue chip, standard, degen. you seed it first and your seed sits locked for 30 days.</span></span>
+        <span class="pm-check" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LAUNCH A COIN ================= -->
+<section class="builder" id="coin" data-panel="coin">
+  <div class="wrap b-grid">
+    <div class="b-steps">
+      <div class="b-step" data-n="1">
+        <header class="bs-head"><span class="bs-n display">1</span><div><h2 class="display">your coin</h2><p>a picture, a name, a ticker. one line about it if you want.</p></div></header>
+        <div class="coin-basics">
+          <label class="drop" id="drop">
+            <input type="file" id="cImg" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
+            <span class="drop-in" id="dropIn"><b class="display">+</b><span class="mono">drop a picture<br>or tap</span></span>
+          </label>
+          <div class="coin-fields">
+            <div class="name-pair">
+              <label class="f"><span class="mono">name</span><input id="cName" maxlength="32" placeholder="baby pengu" autocomplete="off"></label>
+              <label class="f tick"><span class="mono">ticker</span><input id="cTick" maxlength="10" placeholder="BPENGU" autocomplete="off"></label>
+            </div>
+            <label class="f"><span class="mono">one line about it</span><input id="cLine" maxlength="80" placeholder="pengu's little brother" autocomplete="off"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-step" data-n="2">
+        <header class="bs-head"><span class="bs-n display">2</span><div><h2 class="display">paired with</h2><p>what people trade your coin against. fees come in as it, and 45% of them get locked.</p></div></header>
+        <div class="pay-in" id="pairPick">
+          <button class="pay on" data-pair="meme10"><span class="pay-figs" id="payFigs"></span><b class="display">MEME10</b><span>the ten biggest memes on solana. the default, and the deepest pool.</span></button>
+          <button class="pay" data-pair="mtf" id="pairMtf" disabled><span class="pay-figs" id="pairMtfFigs"></span><b class="display" id="pairMtfName">an mtf</b><span id="pairMtfNote">none built yet. make one in the other tab and it shows up here.</span></button>
+        </div>
+      </div>
+
+      <div class="b-step" data-n="3">
+        <header class="bs-head"><span class="bs-n display">3</span><div><h2 class="display">where the fees go</h2><p>1% of every trade, paid in the pair, split by the program. set at launch, nobody can touch it after.</p></div></header>
+        <div class="split-bar" id="splitBar">
+          <div style="--w:45;--c:var(--act)"><b class="display">45%</b><span><i id="splitPair">meme10</i>, locked forever</span></div>
+          <div style="--w:40;--c:var(--bone)"><b class="display">40%</b><span>you, in the pair</span></div>
+          <div style="--w:15;--c:var(--gold)"><b class="display">15%</b><span>mtf</span></div>
+        </div>
+        <div class="vol-calc">
+          <div class="sl-top"><span>if your coin trades this much a day</span><b class="mono" id="volV">$250K</b></div>
+          <input type="range" id="cVol" min="0" max="100" value="55">
+          <div class="vc-out">
+            <div><span class="mono">locked into <i id="vcPair">meme10</i>, a day</span><b class="display" id="vcLock">—</b></div>
+            <div><span class="mono">you get, a day</span><b class="display" id="vcYou">—</b></div>
+            <div><span class="mono">you get, a year</span><b class="display" id="vcYear">—</b></div>
+          </div>
+          <p class="hint mono">1% of volume, in the pair. the lock runs in batches a few times a day. your share is yours to claim any time, straight from the pool.</p>
+        </div>
+      </div>
+    </div>
+
+    <aside class="preview">
+      <div class="coin-card" id="coinCard">
+        <div class="cp-img" id="cpImg"><span class="display">?</span></div>
+        <div class="cp-tick display" id="cpTick">TICKER</div>
+        <div class="cp-name" id="cpName">your coin</div>
+        <div class="cp-line" id="cpLine">one line about it</div>
+        <div class="cp-badge mono"><span class="brand-dot"></span>paired with <b id="cpPair">meme10</b></div>
+        <div class="cp-rows mono">
+          <div><span>starts on</span><b>a bonding curve, priced in <i id="cpPair2">meme10</i></b></div>
+          <div><span>then</span><b>graduates to a full pool</b></div>
+          <div><span>supply</span><b>1,000,000,000</b></div>
+          <div><span>fee, every trade</span><b>1%, in <i id="cpPair3">meme10</i></b></div>
+        </div>
+      </div>
+      <div class="launch-box">
+        <div class="lb-row"><span>to launch</span><b class="mono">0.02 sol + rent</b></div>
+        <div class="lb-row"><span>your cut</span><b class="mono">40% of every fee, for life</b></div>
+        <button class="btn lg full" id="launchCoin" disabled><span id="launchCoinLbl">add a picture, a name and a ticker</span></button>
+        <p class="hint mono">one signature. the coin goes live on the curve with the fee split already locked in.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= MAKE YOUR MTF ================= -->
+<section class="builder" id="index" data-panel="index" hidden>
+  <div class="wrap b-grid">
+    <div class="b-steps">
+      <div class="b-step" data-n="1">
+        <header class="bs-head"><span class="bs-n display">1</span><div><h2 class="display">pick your coins</h2><p>tap to add, 3 at least, 10 at most. every coin carries a tier, and the tier sets how much of your mtf it can be. paste any solana mint and we check it on the spot.</p></div><span class="bs-count mono" id="pickCount">0 / 10</span></header>
+        <div class="rules-strip mono"><span>three tiers</span><b class="t-blue">blue chip · $10m · $500k liq · 30d · up to 40%</b><b class="t-std">standard · $1m · $100k liq · 3d · up to 40%</b><b class="t-deg">degen · $250k · $20k liq · 3d · up to 15% · closed for now</b><b>mint and freeze keys gone</b><b>5% floor per coin</b></div>
+        <div class="paste"><input id="mintIn" placeholder="paste a mint address, we check it live" autocomplete="off" spellcheck="false"><button class="btn sm dark" id="mintCheck"><span>check</span></button></div>
+        <div class="verdict" id="verdict" hidden></div>
+        <div class="picker" id="picker"></div>
+        <p class="hint mono" id="pickHint">pick 3 more</p>
+      </div>
+
+      <div class="b-step" data-n="2">
+        <header class="bs-head"><span class="bs-n display">2</span><div><h2 class="display">how much of each</h2><p>start with "same for all". drag a bar to change one coin, the rest adjust. the tick on each bar is that coin's cap.</p></div></header>
+        <div class="w-modes" id="wModes">
+          <button class="wm on" data-w="equal">same for all</button>
+          <button class="wm" data-w="size">bigger coins get more</button>
+          <button class="wm" data-w="custom">i'll set it</button>
+        </div>
+        <div class="weights" id="weights"><p class="empty">pick coins in step 1 first.</p></div>
+        <p class="hint mono" id="wNote"></p>
+      </div>
+
+      <div class="b-step" data-n="3">
+        <header class="bs-head"><span class="bs-n display">3</span><div><h2 class="display">name it</h2><p>this is what people see on the board, and what coins can pair with.</p></div></header>
+        <div class="name-row">
+          <label class="f"><span class="mono">name</span><input id="iName" maxlength="32" placeholder="cat cartel" autocomplete="off"></label>
+          <label class="f tick"><span class="mono">ticker</span><input id="iTick" maxlength="10" placeholder="CATS" autocomplete="off"></label>
+        </div>
+        <div class="fee-row">
+          <div class="sl-top"><span>your fee, a year</span><b class="mono" id="feeV">1.0%</b></div>
+          <input type="range" id="iFee" min="0" max="3" step="0.25" value="1">
+          <p class="hint mono">you get 50% of this and 40% of the 0.3% in and out. the rest goes to mtf. the mix is locked on launch: the coins and weights never change, you included.</p>
+        </div>
+      </div>
+
+      <div class="b-step" data-n="4">
+        <header class="bs-head"><span class="bs-n display">4</span><div><h2 class="display">seed it</h2><p>your first create is the fund's first. it stays locked for <b id="seedDays">30</b> days, at least <b id="seedMin">50</b> shares. nobody can buy in before you do. skin in the game, on chain.</p></div></header>
+        <div class="seed-row">
+          <label class="f"><span class="mono">sol to seed with</span><div class="seed-amt"><input id="seedSol" inputmode="decimal" value="0.5" aria-label="sol to seed with"><span class="unit">SOL</span></div></label>
+          <div class="seed-out mono"><div><span>about</span><b id="seedShares">—</b></div><div><span>locked until</span><b id="seedUntil">—</b></div></div>
+        </div>
+        <div class="chips seed-chips" id="seedChips"><button data-sol="0.25">0.25</button><button data-sol="0.5">0.5</button><button data-sol="1">1</button><button data-sol="2">2</button></div>
+        <p class="hint mono">the sol buys your coins at the weights above, then one create puts them in the vault and the shares in your lock. on devnet the seed uses the test coins already in your wallet.</p>
+      </div>
+    </div>
+
+    <aside class="preview">
+      <div class="cert-card" id="certCard">
+        <div class="cc-clip"><div class="cc-ros" id="ccRos"></div></div>
+        <div class="cc-top mono"><span>mtf · made on the pad</span><span><span class="cc-tag" id="ccDegen" hidden>degen</span><span id="ccType">locked</span></span></div>
+        <div class="cc-figs" id="ccFigs"></div>
+        <div class="cc-tick display" id="ccTick">TICKER</div>
+        <div class="cc-name" id="ccName">your mtf name</div>
+        <div class="cc-donut"><svg id="donut" viewBox="0 0 120 120" aria-hidden="true"></svg><div class="cc-list mono" id="ccList"></div></div>
+        <div class="cc-spark"><div class="cc-sp-head mono"><span>last 90 days, this mix</span><b id="ccRet">—</b></div><svg id="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+        <div class="cc-seed mono" id="ccSeed"></div>
+      </div>
+      <div class="launch-box">
+        <div class="lb-row"><span>to launch</span><b class="mono" id="lbFee">0.2 sol</b></div>
+        <div class="lb-row"><span>you seed</span><b class="mono" id="lbSeed">0.5 sol, locked 30 days</b></div>
+        <div class="lb-row"><span>you earn</span><b class="mono" id="lbEarn">0.5% a year + 40% of in/out fees</b></div>
+        <button class="btn lg full" id="launchIndex" disabled><span id="launchIndexLbl">pick 3 coins</span></button>
+        <p class="hint mono">your mtf gets its own vault, its own token and a pool against meme10. your seed goes in first and sits locked. coins can launch paired with it the minute it's seeded.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="wrap lp-how" id="onpad">
+  <div class="eyebrow">on the pad now</div>
+  <div class="pad-list" id="padList"><p class="hint mono">loading…</p></div>
+</section>
+
+<section class="wrap lp-how">
+  <div class="eyebrow">how the pad pays</div>
+  <div class="lp-how-grid">
+    <div><b class="display">01</b><p>a coin launches on a bonding curve priced in meme10, or in the mtf you picked. people buy it with the pair, not with sol.</p></div>
+    <div><b class="display">02</b><p>every trade pays 1%, in the pair. the program splits it on the spot: 45% to the lock, 40% to the creator, 15% to mtf.</p></div>
+    <div><b class="display">03</b><p>the 45% is already the pair, so nothing gets swapped. it goes into a vault nobody can open. less of the pair in free float, more of it locked. that's the flywheel.</p></div>
+  </div>
+</section>
+
+</body>
+</html>

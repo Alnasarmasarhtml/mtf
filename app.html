@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MEME10 app · buy, sell, create, burn</title>
+<meta name="description" content="buy meme10 in one signature at nav, cash out the same way, or create and burn it against the vault yourself.">
+<meta name="theme-color" content="#0c0c0b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:title" content="MEME10 app">
+<meta property="og:description" content="buy meme10, sell it, or create and burn it against the vault">
+<meta property="og:image" content="https://alnasarmasarhtml.github.io/mtf/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://alnasarmasarhtml.github.io/mtf/app.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://alnasarmasarhtml.github.io/mtf/og.jpg">
+  <script type="module" crossorigin src="./assets/app-ud-dmIuv.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/net-BkwFUTCw.js">
+  <link rel="modulepreload" crossorigin href="./assets/ui-B-KH1py7.js">
+  <link rel="modulepreload" crossorigin href="./assets/jup-CGazD533.js">
+  <link rel="stylesheet" crossorigin href="./assets/ui-CxfKalnJ.css">
+  <link rel="stylesheet" crossorigin href="./assets/app-tYelgVKo.css">
+</head>
+<body class="app">
+
+<main class="app-main">
+  <section class="wrap app-head">
+    <div class="ah-left">
+      <div class="preview-note"><span data-devnet>live on devnet · the desk fills in one signature, mainnet next</span><span data-mainnet hidden>live on mainnet · opening cap 50,000 meme10</span></div>
+      <h1 class="display ah-title">MEME<span>10</span></h1>
+      <div class="ah-figs" id="ahFigs"></div>
+    </div>
+    <div class="ah-stats">
+      <div class="ah-stat big"><span class="k">price of one meme10</span><b class="mono" id="navBig">$1.0000</b><em class="mono" id="navSince">since launch</em></div>
+      <div class="ah-stat"><span class="k">24h</span><b class="mono" id="nav24">—</b></div>
+      <div class="ah-stat"><span class="k">the ten, combined</span><b class="mono" id="mcapAll">—</b></div>
+      <div class="ah-stat"><span class="k">fund size</span><b class="mono">$0</b><em class="mono">opens with a 500 sol cap</em></div>
+    </div>
+  </section>
+
+  <section class="wrap app-grid">
+    <div class="app-left">
+      <div class="panel chart-panel">
+        <div class="panel-head">
+          <div><span class="eyebrow">looking back</span><h2 class="display">90 days</h2></div>
+          <div class="legend mono" id="legend"></div>
+        </div>
+        <div class="chart" id="chart"></div>
+        <p class="fine mono" id="chartNote"></p>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <div><span class="eyebrow">inside one meme10</span><h2 class="display">holdings</h2></div>
+          <span class="mono fine">live prices · jupiter</span>
+        </div>
+        <div class="holdings" id="holdings"></div>
+      </div>
+    </div>
+
+    <aside class="app-right">
+      <div class="panel testdrive" id="testdrive" hidden>
+        <div class="td-head">
+          <div><span class="eyebrow"><span data-devnet>test drive · </span><span data-net>devnet</span></span><h2 class="display">the vault</h2></div>
+          <a class="mono fine" data-explorer href="#" target="_blank" rel="noopener">see it on explorer ↗</a>
+        </div>
+        <p class="td-note" data-devnet>the actual meme10 contract on solana's test network with ten stand-in coins. same code, same math, play money. buy and cash out go through the desk in one signature.</p>
+        <p class="td-note" data-mainnet hidden>the meme10 contract on mainnet. buy with sol in one signature at nav through the desk, or bring the ten yourself. burn or cash out any time.</p>
+        <p class="fine mono td-desk" id="tdDesk" hidden></p>
+        <button class="btn full" id="tdConnect"><span>connect wallet</span></button>
+        <div class="td-faucet" id="tdFaucet" hidden>
+          <b>you need test coins first</b>
+          <p>one click gets you a little sol for fees and $20 of each of the ten coins. phantom needs testnet mode on first: settings → developer settings → testnet mode.</p>
+          <div class="td-faucet-btns"><button class="btn sm" id="tdGet"><span>send me test coins</span></button><button class="btn sm ghost" id="tdCopy"><span>copy my address</span></button></div>
+          <p class="fine mono">faucet wallet: <span data-faucet-addr></span></p>
+        </div>
+        <div class="td-you" id="tdYou"></div>
+        <div id="tdActions" hidden>
+          <div class="td-tabs"><button class="td-tab on" data-mode="buy" data-trade>buy</button><button class="td-tab" data-mode="create">create</button><button class="td-tab" data-mode="redeem">burn</button><button class="td-tab" data-mode="cashout" data-trade>cash out</button></div>
+          <label class="field">
+            <span class="fl" id="tdAmtLabel">meme10</span>
+            <div class="amt"><input id="tdAmt" inputmode="decimal" value="10" aria-label="amount"><span class="unit orange" id="tdUnit">MEME10</span></div>
+            <div class="chips" id="tdChips"><button data-td="1">1</button><button data-td="10">10</button><button data-td="50">50</button><button data-td="100">100</button></div>
+          </label>
+          <div class="td-quote" id="tdQuote"></div>
+          <p class="fine mono td-status" id="tdStatus"></p>
+          <button class="btn lg full" id="tdGo" disabled><span>connect wallet</span></button>
+        </div>
+        <div class="td-lock" id="tdLock" hidden>
+          <span class="eyebrow">lock · a public signal, nothing more</span>
+          <div class="td-lock-mine mono" id="tdLockMine" hidden></div>
+          <div class="td-lock-row">
+            <input id="tdLockAmt" inputmode="decimal" placeholder="0" aria-label="meme10 to lock">
+            <div class="chips" id="tdLockDays"><button data-days="7">7d</button><button data-days="30" class="on">30d</button><button data-days="90">90d</button></div>
+            <button class="btn sm" id="tdLockGo" disabled><span>lock</span></button>
+          </div>
+          <p class="fine mono">locked meme10 sits in a vault under your key until the date. it shows up on the board. it pays nothing, it says you're staying.</p>
+        </div>
+        <div class="td-vault"><span class="eyebrow">in the vault now · <b id="tdSupply">—</b></span><div class="td-vault-list" id="tdVault"></div></div>
+      </div>
+      <div class="panel trust">
+        <div class="trust-row"><span>vault program</span><b class="mono">live on <span data-net-word>devnet</span></b></div>
+        <div class="trust-row"><span>buy, cash out</span><b class="mono">one signature at nav + 0.3%, through the desk</b></div>
+        <div class="trust-row"><span>desk offline?</span><b class="mono">create and burn in kind still work</b></div>
+        <div class="trust-row"><span>the ten</span><b class="mono">fixed, no instruction to change them</b></div>
+        <div class="trust-row"><span>admin withdraw</span><b class="mono">doesn't exist</b></div>
+        <div class="trust-row"><span>burn for coins</span><b class="mono">can't be paused</b></div>
+        <div class="trust-row"><span>audit</span><b class="mono">before mainnet</b></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="wrap board" id="board">
+    <div class="panel">
+      <div class="panel-head">
+        <div><span class="eyebrow">leaderboard</span><h2 class="display">who's in.</h2></div>
+        <div class="lb-tabs" id="lbTabs"><button class="on" data-lb="apes">apes</button><button data-lb="holders">holders</button><button data-lb="lockers">lockers</button><button data-lb="creators">creators</button></div>
+      </div>
+      <div class="lb-list" id="lbList"><p class="board-empty">reading the chain…</p></div>
+      <p class="fine mono" id="lbNote"></p>
+    </div>
+    <div class="panel">
+      <div class="panel-head">
+        <div><span class="eyebrow">live activity</span><h2 class="display">just now.</h2></div>
+        <span class="mono fine" id="actUpd"></span>
+      </div>
+      <div class="act-list" id="actList"><p class="board-empty">reading the chain…</p></div>
+    </div>
+  </section>
+
+  <section class="wrap proof" id="proof">
+    <div class="proof-head">
+      <div class="eyebrow">transparency</div>
+      <h2 class="display">every move, on the record.</h2>
+      <p>every create and burn against the vault, every desk fill, every lock and every launchpad fee shows up here with its transaction. the fund has no rebalances to report, because the ten never change.</p>
+    </div>
+    <div class="ledger">
+      <div class="ledger-row head mono"><span>when</span><span>what</span><span>details</span><span>tx</span></div>
+      <div class="ledger-row mono empty"><span>—</span><span>nothing yet</span><span>the first entry is the vault opening on mainnet</span><span>—</span></div>
+      <div class="ledger-row mono"><span>4 oct 2026</span><span>index snapshot</span><span id="snapLine">ten coins, 10% each, nav set to $1.0000</span><span>off-chain</span></div>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>a coin on the mtf launchpad</title>
+<meta name="description" content="a coin launched on the mtf launchpad, paired with meme10.">
+<meta name="theme-color" content="#0c0c0b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" crossorigin src="./assets/coin-Bw0yTpIB.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/net-BkwFUTCw.js">
+  <link rel="modulepreload" crossorigin href="./assets/ui-B-KH1py7.js">
+  <link rel="modulepreload" crossorigin href="./assets/pad-De-uxKJs.js">
+  <link rel="stylesheet" crossorigin href="./assets/ui-CxfKalnJ.css">
+  <link rel="stylesheet" crossorigin href="./assets/app-tYelgVKo.css">
+</head>
+<body class="app">
+
+<main class="app-main">
+  <section class="wrap app-head coin-head">
+    <div class="ah-left">
+      <div class="preview-note"><span>on the pad · paired with <span id="cPair">meme10</span></span></div>
+      <div class="coin-id"><div class="coin-img" id="cImg"></div><div><h1 class="display ah-title coin-title" id="cTick">…</h1><p class="coin-name" id="cName"></p></div></div>
+      <p class="coin-desc" id="cDesc"></p>
+      <p class="fine mono" id="cMint"></p>
+    </div>
+    <div class="ah-stats">
+      <div class="ah-stat big"><span class="k">price, in <span class="pairword">meme10</span></span><b class="mono" id="cPrice">—</b><em class="mono" id="cPriceUsd"></em></div>
+      <div class="ah-stat"><span class="k">market cap</span><b class="mono" id="cMcap">—</b></div>
+      <div class="ah-stat"><span class="k">in the curve</span><b class="mono" id="cReserve">—</b></div>
+      <div class="ah-stat"><span class="k">to graduation</span><b class="mono" id="cProg">—</b><em class="mono">then it gets a full pool</em></div>
+      <div class="ah-stat"><span class="k">fees paid so far</span><b class="mono" id="cFees">—</b><em class="mono">45% of it locked, 40% to the creator</em></div>
+    </div>
+  </section>
+
+  <section class="wrap app-grid">
+    <div class="app-left">
+      <div class="panel">
+        <div class="panel-head"><div><span class="eyebrow">the curve</span><h2 class="display">how it fills</h2></div><span class="mono fine" id="cCfg"></span></div>
+        <div class="curve-bar"><i id="cBar"></i></div>
+        <p class="kind-note">every buy pays <span class="pairword">meme10</span> into the curve and the price climbs along a fixed line. when the curve holds enough <span class="pairword">meme10</span> it graduates: the <span class="pairword">meme10</span> and the leftover coins become a normal pool, with half the liquidity locked forever. nobody can pull it.</p>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div><span class="eyebrow">the split</span><h2 class="display">every trade</h2></div></div>
+        <div class="trust">
+          <div class="trust-row"><span>fee</span><b class="mono">1%, paid in <span class="pairword">meme10</span></b></div>
+          <div class="trust-row"><span>locked forever</span><b class="mono">45%</b></div>
+          <div class="trust-row"><span>the creator</span><b class="mono" id="cCreator">40%</b></div>
+          <div class="trust-row"><span>mtf</span><b class="mono">15%</b></div>
+        </div>
+      </div>
+    </div>
+    <aside class="app-right">
+      <div class="panel testdrive">
+        <div class="td-head"><div><span class="eyebrow">trade · <span id="cNet">—</span></span><h2 class="display">buy & sell</h2></div><a class="mono fine" id="cExplorer" href="#" target="_blank" rel="noopener">pool on explorer ↗</a></div>
+        <p class="td-note">you trade with <span class="pairword">meme10</span>. no <span class="pairword">meme10</span> yet? <a href="app.html" style="text-decoration:underline">get some with sol in the app</a>.</p>
+        <button class="btn full" id="cConnect"><span>connect wallet</span></button>
+        <div class="td-you" id="cYou"></div>
+        <div class="td-tabs"><button class="td-tab on" data-side="buy">buy</button><button class="td-tab" data-side="sell">sell</button></div>
+        <label class="field">
+          <span class="fl" id="cAmtLabel">you pay</span>
+          <div class="amt"><input id="cAmt" inputmode="decimal" value="10" aria-label="amount"><span class="unit orange" id="cUnit">MEME10</span></div>
+          <div class="chips" id="cChips"><button data-v="1">1</button><button data-v="10">10</button><button data-v="100">100</button><button data-v="1000">1000</button></div>
+        </label>
+        <div class="td-quote" id="cQuote"></div>
+        <button class="btn lg full" id="cGo" disabled><span>connect wallet</span></button>
+      </div>
+    </aside>
+  </section>
+</main>
+
+</body>
+</html>

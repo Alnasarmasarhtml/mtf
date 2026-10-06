@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MEME10 by MTF · the ten biggest memes on solana in one coin</title>
+<meta name="description" content="one coin backed by a vault holding the ten biggest memes on solana. launch coins paired with it. mtf is the house meme.">
+<meta name="theme-color" content="#0c0c0b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:title" content="MEME10 by MTF">
+<meta property="og:description" content="the ten biggest memes on solana in one coin">
+<meta property="og:image" content="https://alnasarmasarhtml.github.io/mtf/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://alnasarmasarhtml.github.io/mtf/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://alnasarmasarhtml.github.io/mtf/og.jpg">
+  <script type="module" crossorigin src="./assets/main-Ln_jDOoy.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/ui-B-KH1py7.js">
+  <link rel="modulepreload" crossorigin href="./assets/guilloche-C2L610aW.js">
+  <link rel="stylesheet" crossorigin href="./assets/ui-CxfKalnJ.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-SBcVC7jQ.css">
+</head>
+<body class="landing">
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-word display">MTF</div>
+    <div class="loader-bar"><i id="loaderBar"></i></div>
+    <div class="loader-num mono" id="loaderNum">00</div>
+  </div>
+</div>
+
+<!-- 01 HERO -->
+<section class="hero" id="top">
+  <div class="hero-word" aria-hidden="true">MEME<span>10</span></div>
+  <canvas class="hero-gl" id="heroGL" aria-hidden="true"></canvas>
+  <div class="hero-ui wrap">
+    <div class="hero-copy">
+      <div class="preview-note">live on devnet · mainnet after audit</div>
+      <h1 class="hero-title display">the ten biggest memes on solana, in one coin.</h1>
+      <p class="hero-sub">one token backed by a vault that holds all ten. buy it, hold it, burn it back into the coins whenever you want. the list never changes.</p>
+      <div class="hero-cta">
+        <a class="btn lg" href="app.html"><span>buy meme10</span><span class="arr">→</span></a>
+        <a class="btn lg ghost" href="launchpad.html"><span>launch on mtf</span></a>
+      </div>
+    </div>
+    <div class="hero-front" id="heroFront">
+      <div class="hf-no mono" id="hfNo">01 / 10</div>
+      <div class="hf-sym display" id="hfSym">PUMP</div>
+      <div class="hf-line" id="hfLine">the pill that launched a million coins</div>
+      <div class="hf-stats mono"><span id="hfMcap">—</span><span id="hfCh">—</span></div>
+      <div class="hf-nav">
+        <button class="hf-arrow" data-spin="-1" aria-label="previous coin">←</button>
+        <button class="hf-arrow" data-spin="1" aria-label="next coin">→</button>
+        <span class="hf-hint mono">drag the lineup</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bar">
+    <div class="hero-stats mono" id="heroStats">
+      <div><span class="k">nav</span><b id="hsNav">$1.0000</b></div>
+      <div><span class="k">24h</span><b id="hs24">—</b></div>
+      <div class="hide-sm"><span class="k">10 coins</span><b id="hsMcap">—</b></div>
+    </div>
+    <div class="tape" id="tape"></div>
+  </div>
+</section>
+
+<!-- 02 THE TEN -->
+<section class="set paper" id="set">
+  <div class="wrap">
+    <header class="sec-head">
+      <div class="eyebrow">02 · what's inside</div>
+      <h2 class="display sec-title">the ten.</h2>
+      <p class="sec-lede">picked once, by market cap, on <span id="asof">4 oct 2026</span>. a tenth of the vault each at launch, then they drift with price. every one is a real solana token with its mint and freeze keys burned.</p>
+    </header>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<!-- 03 HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="how-pin">
+    <div class="wrap how-head">
+      <div><div class="eyebrow">03 · how it works</div><h2 class="display sec-title">three moves.</h2></div>
+    </div>
+    <div class="how-track" id="howTrack">
+      <article class="step" data-step="1">
+        <div class="step-copy">
+          <div class="step-n display">1</div>
+          <h3 class="display">deposit sol</h3>
+          <p>one signature. the desk hands you meme10 at nav plus 0.3%, and brings the ten to the vault itself. if the desk is offline the app buys the ten on jupiter for you instead.</p>
+        </div>
+        <div class="step-art art-split" id="artSplit"></div>
+      </article>
+      <article class="step" data-step="2">
+        <div class="step-copy">
+          <div class="step-n display">2</div>
+          <h3 class="display">hold</h3>
+          <p>nothing to do. your meme10 is worth more or less as the ten move. one of them rugs, you lose at most a tenth. the vault is a program on solana and nobody has a withdraw button, us included.</p>
+        </div>
+        <div class="step-art art-vault" id="artVault"></div>
+      </article>
+      <article class="step" data-step="3">
+        <div class="step-copy">
+          <div class="step-n display">3</div>
+          <h3 class="display">out, any time</h3>
+          <p>cash out to the desk in one signature at nav, sell in the pool, or burn it and take the actual coins out of the vault. no lockup. burning can never be paused.</p>
+        </div>
+        <div class="step-art art-out" id="artOut"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 04 WHY HYPE CAN'T PUMP IT -->
+<section class="nav-sec paper" id="nav">
+  <div class="wrap">
+    <header class="sec-head">
+      <div class="eyebrow">04 · the part people get wrong</div>
+      <h2 class="display sec-title">hype can't<br>pump it.</h2>
+      <p class="sec-lede">meme10 is not a coin you pump. its price is the vault divided by the supply, and bots hold it there. buying a lot of it doesn't make it go up, it makes the vault buy more of the ten. the ten go up.</p>
+    </header>
+    <div class="laws">
+      <div class="law"><div class="law-k mono">the price</div><div class="law-v display">nav = vault ÷ supply</div><p>what the ten coins in the vault are worth, split over every meme10 that exists. that's the real price, published live.</p></div>
+      <div class="law"><div class="law-k mono">pool above nav</div><div class="law-v display">bots mint and sell</div><p>they buy the ten, create fresh meme10 at nav, sell it in the pool, until the gap is gone.</p></div>
+      <div class="law"><div class="law-k mono">pool below nav</div><div class="law-v display">bots buy and burn</div><p>they buy cheap meme10 in the pool, burn it for the coins, sell the coins. same thing, other way.</p></div>
+      <div class="law"><div class="law-k mono">the result</div><div class="law-v display">it tracks the ten</div><p>the way spy tracks the s&amp;p. the desk quotes nav straight from the vault, the pool follows it, and the vault is open to anyone who brings the ten.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 LAUNCHPAD -->
+<section class="pad" id="launchpad">
+  <div class="wrap">
+    <header class="pad-head">
+      <div><div class="eyebrow">05 · the launchpad</div><h2 class="display pad-title">launch on mtf.</h2></div>
+      <p class="pad-note">every coin launched here trades against meme10 or against an mtf of your own. one percent fee on every trade, paid in the pair. 45% of it goes straight into a lock. forever. that's how the vault grows.</p>
+    </header>
+    <div class="doors">
+      <a class="door" href="launchpad.html#coin">
+        <div class="door-art" id="doorCoin"></div>
+        <div class="door-copy">
+          <span class="mono">a</span>
+          <h3 class="display">launch a coin</h3>
+          <p>picture, name, ticker. pick what it's paired with: meme10, or an mtf somebody built. you keep 40% of every fee it ever makes.</p>
+          <span class="door-go">launch a coin <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a class="door" href="launchpad.html#index">
+        <div class="door-art" id="doorIndex"></div>
+        <div class="door-copy">
+          <span class="mono">b</span>
+          <h3 class="display">make your own mtf</h3>
+          <p>pick 3 to 10 coins, name it, launch it. three tiers of coins, blue chip, standard, degen, each with a cap on how much of your mtf it can be. you seed it first and your seed sits locked for 30 days.</p>
+          <span class="door-go">build one <span class="arr">→</span></span>
+        </div>
+      </a>
+    </div>
+    <div class="fee-line">
+      <div><b class="display">1%</b><span>fee on every trade, paid in the pair</span></div>
+      <div class="lock"><b class="display">45%</b><span>locked, forever. meme10 or your mtf</span></div>
+      <div><b class="display">40%</b><span>to whoever launched the coin, in the pair</span></div>
+      <div><b class="display">15%</b><span>to mtf, keeps the lights on</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 MTF -->
+<section class="mtf" id="mtf">
+  <div class="wrap mtf-grid">
+    <div class="mtf-copy">
+      <div class="eyebrow gold-ink">06 · the house meme</div>
+      <h2 class="display sec-title">mtf.</h2>
+      <p class="sec-lede">mtf is launch number one on our own pad, paired with meme10 like every coin after it. it's the house meme: it brings the noise, meme10 does the work. no staking, no promises, no pump.fun.</p>
+      <ul class="mtf-facts">
+        <li><b class="display">#1</b><span>first coin on the mtf launchpad</span></li>
+        <li><b class="display">meme10</b><span>what it's paired with, so buying mtf buys the ten</span></li>
+        <li><b class="display">45%</b><span>of its own fees lock meme10, same rule as everyone</span></li>
+      </ul>
+      <div class="hero-cta"><a class="btn lg gold" href="launchpad.html"><span>see the launchpad</span><span class="arr">→</span></a><span class="mono soft">mtf launches when meme10 goes live on mainnet</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 FAQ -->
+<section class="faq paper" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-left"><div class="eyebrow">07 · questions</div><h2 class="display sec-title">asked a lot.</h2><img class="faq-fig" src="figures/cate-sm.webp" alt="" loading="lazy" onerror="this.onerror=null;this.src='figures/popcat-sm.webp'"></div>
+    <div class="qa" id="qa"></div>
+  </div>
+</section>
+
+</body>
+</html>
